@@ -72,8 +72,6 @@ function initializeSwiper() {
 		slidesPerView: 1,
 		spaceBetween: 30,
 	});
-
-	swiper.update();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
