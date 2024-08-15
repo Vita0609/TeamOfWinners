@@ -1,6 +1,3 @@
-import "swiper/swiper-bundle.css";
-import Swiper from "swiper";
-
 const projects = [
 	{
 		title: "Programming Across Borders: Ideas, Technologies, Innovations",
@@ -35,7 +32,9 @@ const generateProjectCard = (project) => `
     <div class="project-card">
         <div class="project-card-info">
             <ul class="tags-list">
-                ${project.tags.map((tag) => `<li><p class="tag">${tag}</p></li>`).join("")}
+                ${project.tags
+									.map((tag) => `<li><p class="tag">${tag}</p></li>`)
+									.join("")}
             </ul>
             <h3 class="project-card-title">${project.title}</h3>
             <a href="https://github.com/Vita0609/TeamOfWinners" target="_blank" rel="noopener norefferer" class="project-card-btn">See project</a>
@@ -73,6 +72,8 @@ function initializeSwiper() {
 		slidesPerView: 1,
 		spaceBetween: 30,
 	});
+
+	swiper.update();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
