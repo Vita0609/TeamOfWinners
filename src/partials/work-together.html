@@ -1,0 +1,83 @@
+<section id="work-together" class="section">
+  <div class="container container-footer">
+    <div class="titel-container">
+      <picture>
+        <source
+          srcset="
+            ../img/work-together/image.jpg    1x,
+            ../img/work-together/image@2x.jpg 2x,
+            ../img/work-together/image@3x.jpg 3x
+          "
+          media="(min-width:1440px)"
+        />
+        <source
+          srcset="
+            ../img/work-together/image-mobile.jpg    1x,
+            ../img/work-together/image@2x-mobile.jpg 2x,
+            ../img/work-together/image@3x-mobile.jpg 3x
+          "
+          media="(max-width:767px)"
+        />
+        <image
+          src="../img/work-together/image.jpg"
+          alt="titel-picture"
+          width="70"
+          height="70"
+          class="image"
+        />
+      </picture>
+      <h2 class="titel-footer">
+        LET'S <span style="color: #ff3d3d">WORK</span> TOGETHER
+      </h2>
+    </div>
+
+    <form id="form">
+      <input
+        class="input"
+        type="text"
+        id="email"
+        name="email"
+        placeholder="clients@gmail.com"
+        required
+        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+      />
+      <input
+        class="input"
+        type="text"
+        id="comments"
+        name="comments"
+        placeholder="Comments"
+        required
+      />
+      <button class="submit-btn" type="submit">Send</button>
+    </form>
+    <div id="modal-window" class="modal">
+      <div class="modal-content">
+        <div class="close">
+          <svg class="icon" width="24" height="24">
+            <use href="../img/icons.svg#close"></use>
+          </svg>
+        </div>
+        <p class="titel-modal">Thank you for your interest in cooperation!</p>
+        <p>
+          The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch.
+        </p>
+      </div>
+    </div>
+    <address>
+      <ul class="address-list">
+        <li class="address-item">
+          <a class="address-email" href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="address-item">
+          <a class="address-tel" href="tel:+3801111111111"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
+    </address>
+  </div>
+</section>
