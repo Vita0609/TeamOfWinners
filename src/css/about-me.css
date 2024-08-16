@@ -1,9 +1,14 @@
+.about-inform-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
 
 .about-text-wrapper {
 border-radius: 24px;
 max-width: 343px;
 height: 500px;
-background-color:#242527;;
+background-color:#242527;
 margin-bottom: 16px;
 }
 
@@ -18,6 +23,21 @@ padding-left: 32px;
 padding-top: 32px;
 padding-right: 32px;
 }
+
+.education-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.role-wrap {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    margin-bottom: 20px;
+}
+
 
 .service-functional {
 color: #ed3b44;
@@ -48,6 +68,10 @@ margin-bottom: 32px;
 margin-top: 32px;
 }
 
+.about-ac-list{
+    margin-bottom: 32px;
+}
+
 .about-title {
 font-family: "Inter Tight", sans-serif;
 font-weight: 600;
@@ -68,10 +92,6 @@ letter-spacing: -0.02em;
 color: #fafafa;
 }
 
-.text-part1{
-    margin-bottom: 32px;
-}
-
 .text-part2{
     margin-bottom: 20px;
 }
@@ -89,7 +109,7 @@ color: #fafafa;
 }
 
 .aboutme-item-icon {
-fill: #fafafa;
+stroke: #fafafa;
 }
 
 .custom-line {
@@ -100,10 +120,11 @@ fill: #fafafa;
     border-top: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-/* js-markapp */
 
 .about-skills-container {
-    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-bottom: 32px;
 
 }
@@ -129,6 +150,7 @@ text-align: center;
 box-sizing: border-box;
 }
 
+
 @media (max-width: 767px) {
     .about-skills-list .about-skills-item:nth-child(n+3) {
       display: none;
@@ -138,6 +160,13 @@ box-sizing: border-box;
 
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+
+  .about-inform-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+      
 
 .about-text-wrapper {
     border-radius: 24px;
@@ -176,11 +205,6 @@ box-sizing: border-box;
         margin-bottom: 8px;
     }
     
-    .about-accordion-container {
-        width: 704px;
-        height: 360px;
-    }
-    
     .about-title {
     font-family: "Inter Tight", sans-serif;
     font-weight: 600;
@@ -201,12 +225,12 @@ box-sizing: border-box;
     color: #fafafa;
     }
     
-    .text-part1{
-        margin-bottom: 16px;
-    }
-    
     .text-part2{
         margin-bottom: 32px;
+    }
+
+    .about-ac-list{
+        margin-bottom: 64px;
     }
     
     .aboutme-accordion-btn {
@@ -222,7 +246,7 @@ box-sizing: border-box;
     }
     
     .aboutme-item-icon {
-    fill: #fafafa;
+    stroke: #fafafa;
     }
     
     .custom-line {
@@ -239,8 +263,6 @@ box-sizing: border-box;
     
     .about-skills-container {
         padding-bottom: 32px;
-        margin-top: 64px;
-    
     }
     .about-skills-list {
     display: flex;
@@ -263,6 +285,20 @@ box-sizing: border-box;
     text-align: center;
     box-sizing: border-box;
     }
+
+    .education-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 32px;
+    }
+    
+    .role-wrap {
+        display: flex;
+        flex-direction: column; 
+        gap: 10px; 
+        margin-bottom: 32px;
+    }
    
        
 }
@@ -270,6 +306,13 @@ box-sizing: border-box;
 /*=========Adaptive-DESKTOP=========*/
 
 @media screen and (min-width:1440px) {
+
+    .about-inform-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      
 
     .about-box{
         display: flex;
@@ -313,11 +356,6 @@ box-sizing: border-box;
             margin-bottom: 8px;
         }
         
-        .about-accordion-container {
-            width: 1376px;
-            height: 400px;
-        }
-        
         .about-title {
         font-family: "Inter Tight", sans-serif;
         font-weight: 600;
@@ -331,13 +369,15 @@ box-sizing: border-box;
 
         .about-inform-container {
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
         flex-direction: column;
-        width: 612px;
-        height: 320px;
+        max-width: 612px;
         margin-left: auto;
-        margin-bottom: 32px;
+        margin-right: 68px;
+        gap: 32px;
+        }
+
+        .about-ac-list{
+            margin-bottom: 96px;
         }
         
         .about-inform-text {
@@ -363,7 +403,7 @@ box-sizing: border-box;
         }
         
         .aboutme-item-icon {
-        fill: #fafafa;
+        stroke: #fafafa;
         }
         
         .custom-line {
@@ -380,7 +420,6 @@ box-sizing: border-box;
 
         .about-skills-container {
         padding-bottom: 32px;
-        margin-top: 96px;
         }
 
         .about-skills-list {
@@ -405,4 +444,17 @@ box-sizing: border-box;
         box-sizing: border-box;
         }
 
+        .education-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 32px;
+        }
+        
+        .role-wrap {
+            display: flex;
+            flex-direction: column; 
+            gap: 10px; 
+            margin-bottom: 32px;
+        }
 }
