@@ -1,3 +1,4 @@
+
 const projects = [
 	{
 		title: "Programming Across Borders: Ideas, Technologies, Innovations",
@@ -78,3 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	renderProjects();
 	initializeSwiper();
 });
+
+
+
