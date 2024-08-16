@@ -8,5 +8,8 @@ import './js/about-me.js';
 import './js/faq.js';
 import './js/scroll.js';
 import './js/benefits.js';
+<<<<<<< Updated upstream
 import './js/heroColors.js';
+=======
+>>>>>>> Stashed changes
 import './js/change-theme.js';
