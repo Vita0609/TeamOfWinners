@@ -1,10 +1,36 @@
-body.day {
-    background-color: var(--bg-main);
-
-    color: var(--main-color);
+.change-theme {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    background-color: orangered;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: none;
 }
 
-body.night {
-    background-color: var(--red);
-    color: var(--main-color);
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: #3335;
+
+    .colors {
+        left: 50%;
+        top: 70%;
+        translate: -50%;
+        position: absolute;
+
+        button {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            border: none;
+            
+        }
+        .red {
+            background-color: orangered;
+            
+        }
+    }
 }
+
