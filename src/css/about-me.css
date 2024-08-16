@@ -1,0 +1,408 @@
+
+.about-text-wrapper {
+border-radius: 24px;
+max-width: 343px;
+height: 500px;
+background-color:#242527;;
+margin-bottom: 16px;
+}
+
+.service-text {
+font-weight: 500;
+font-size: 24px;
+line-height: 1.16;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: #fafafa;
+padding-left: 32px;
+padding-top: 32px;
+padding-right: 32px;
+}
+
+.service-functional {
+color: #ed3b44;
+}
+.service-web {
+color: rgba(250, 250, 250, 0.4);
+}
+.about-me-img {
+border-radius: 24px;
+}
+
+.about-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.about-accordion-container {
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 20px;
+max-width: 343px;
+height: 628px;
+margin-bottom: 32px;
+margin-top: 32px;
+}
+
+.about-title {
+font-family: "Inter Tight", sans-serif;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: rgba(250, 250, 250, 0.4);
+margin-bottom: 24px;
+}
+
+.about-inform-text {
+font-family: "Inter Tight", sans-serif;
+font-weight: 500;
+font-size: 16px; 
+line-height: 1.5;
+letter-spacing: -0.02em;
+color: #fafafa;
+}
+
+.text-part1{
+    margin-bottom: 32px;
+}
+
+.text-part2{
+    margin-bottom: 20px;
+}
+
+.aboutme-accordion-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 100px;
+    padding: 9px;
+    width: 36px;
+    height: 36px;
+    background: #1c1d20;
+}
+
+.aboutme-item-icon {
+fill: #fafafa;
+}
+
+.custom-line {
+    width: 343px;
+    height: 2px;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+/* js-markapp */
+
+.about-skills-container {
+    margin-top: 32px;
+    padding-bottom: 32px;
+
+}
+.about-skills-list {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: row;
+font-size: 16px;
+letter-spacing: -0.02em;
+color: #fafafa;
+}
+
+.about-skills-item {
+width: 130px;
+height: 130px;
+border-radius: 100%;
+border: 1px solid rgba(250, 250, 250, 0.2);
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+    .about-skills-list .about-skills-item:nth-child(n+3) {
+      display: none;
+    }
+  }
+/*=========Adaptive-TABLET=========*/
+
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+
+.about-text-wrapper {
+    border-radius: 24px;
+    max-width: 704px;
+    height: 700px;
+    background:#242527;
+    margin-bottom: 16px;
+    }
+     
+    .service-text {
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #fafafa;
+        padding: 64px;
+    }
+    
+    .service-functional {
+    color: #ed3b44;
+    }
+    .service-web {
+    color: rgba(250, 250, 250, 0.4);
+    }
+    .about-me-img {
+    border-radius: 24px;
+    }
+    
+    .about-title-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 704px;
+        height: 40px;
+        margin-bottom: 8px;
+    }
+    
+    .about-accordion-container {
+        width: 704px;
+        height: 360px;
+    }
+    
+    .about-title {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+    margin-bottom: 16px;
+    }
+    
+    .about-inform-text {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px; 
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    }
+    
+    .text-part1{
+        margin-bottom: 16px;
+    }
+    
+    .text-part2{
+        margin-bottom: 32px;
+    }
+    
+    .aboutme-accordion-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(250, 250, 250, 0.2);
+        border-radius: 100px;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        background: #1c1d20;
+    }
+    
+    .aboutme-item-icon {
+    fill: #fafafa;
+    }
+    
+    .custom-line {
+        width: 704px;
+        height: 2px;
+        background-color: transparent;
+        border: none;
+        border-top: 1px solid rgba(250, 250, 250, 0.2);
+    }
+
+    .about-skills-list .about-skills-item:nth-child(n+4) {
+        display: none;
+      }
+    
+    .about-skills-container {
+        padding-bottom: 32px;
+        margin-top: 64px;
+    
+    }
+    .about-skills-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    }
+    
+    .about-skills-item {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    }
+   
+       
+}
+
+/*=========Adaptive-DESKTOP=========*/
+
+@media screen and (min-width:1440px) {
+
+    .about-box{
+        display: flex;
+        gap: 16px;
+    }
+
+    .about-text-wrapper {
+        border-radius: 24px;
+        max-width: 680px;
+        height: 700px;
+        background: #242527;
+        margin-bottom: 96px;
+        }
+         
+        .service-text {
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            color: #fafafa;
+            padding: 64px;
+        }
+        
+        .service-functional {
+        color: #ed3b44;
+        }
+        .service-web {
+        color: rgba(250, 250, 250, 0.4);
+        }
+        .about-me-img {
+        border-radius: 24px;
+        }
+        
+        .about-title-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 1376px;
+            height: 40px;
+            margin-bottom: 8px;
+        }
+        
+        .about-accordion-container {
+            width: 1376px;
+            height: 400px;
+        }
+        
+        .about-title {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: rgba(250, 250, 250, 0.4);
+        margin-bottom: 16px;
+        }
+
+        .about-inform-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 612px;
+        height: 320px;
+        margin-left: auto;
+        margin-bottom: 32px;
+        }
+        
+        .about-inform-text {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 16px; 
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        color: #fafafa;
+        }
+        
+        
+        .aboutme-accordion-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(250, 250, 250, 0.2);
+            border-radius: 100px;
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+            background: #1c1d20;
+        }
+        
+        .aboutme-item-icon {
+        fill: #fafafa;
+        }
+        
+        .custom-line {
+            width: 1376px;
+            height: 2px;
+            background-color: transparent;
+            border: none;
+            border-top: 1px solid rgba(250, 250, 250, 0.2);
+        }
+
+        .about-skills-list .about-skills-item {
+        display: list-item;
+        }
+
+        .about-skills-container {
+        padding-bottom: 32px;
+        margin-top: 96px;
+        }
+
+        .about-skills-list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        font-size: 20px;
+        letter-spacing: -0.02em;
+        color: #fafafa;
+        }
+        
+        .about-skills-item {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        border: 1px solid rgba(250, 250, 250, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-sizing: border-box;
+        }
+
+}
