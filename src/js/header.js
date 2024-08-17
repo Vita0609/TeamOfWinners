@@ -33,7 +33,7 @@ const dropdownAppearEffect = new KeyframeEffect(
     { opacity: "1",
       transform: "translateY(0)"
     }],
-    { duration: 500 });
+    { duration: 250 });
 
 const dropdownDisappearEffect = new KeyframeEffect(
     dropdownMenu,
@@ -43,7 +43,7 @@ const dropdownDisappearEffect = new KeyframeEffect(
     { opacity: "0",
       transform: "translateY(-100%)"
     }],
-    { duration: 500 });
+    { duration: 250 });
 
 const dropdownAppearAnim = new Animation(
     dropdownAppearEffect,
@@ -61,7 +61,7 @@ const overlayOpenEffect = new KeyframeEffect(
     },
     { transform: "translateX(0)"
     }],
-    { duration: 500 }
+    { duration: 250 }
 );
 
 const overlayCloseEffect = new KeyframeEffect(
@@ -70,7 +70,7 @@ const overlayCloseEffect = new KeyframeEffect(
     },
     { transform: "translateX(100%)"
     }],
-    { duration: 500 }
+    { duration: 250 }
 );
 
 const overlayOpenAnim = new Animation(
@@ -92,7 +92,7 @@ function toggleDropdown() {
     dropdownDisappearAnim.play();
     setTimeout(() => {
         dropdownMenu.classList.add('visually-hidden');
-    }, 500);
+    }, 250);
 }
 
 function openOverlay() {
@@ -105,6 +105,6 @@ function closeOverlay() {
     overlayCloseAnim.play();
     setTimeout(() => {
         overlayMenu.classList.remove('is-open');
-    }, 500);
+    }, 250);
     document.body.style.overflow = '';
 }

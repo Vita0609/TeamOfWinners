@@ -132,9 +132,7 @@
 }
 
 /* Burger Button */
-.burger-btn-box {
-  margin-left: auto;
-}
+
 
 @media only screen and (min-width: 768px) {
   .burger-btn-box {
