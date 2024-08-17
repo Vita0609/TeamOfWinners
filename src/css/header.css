@@ -24,11 +24,6 @@
     gap: 8px;
     min-width: 172px;
   }
-
-  .header-logo-box {
-    display: flex;
-    gap: 8px;
-  }
   
   .header-logo-text {
     color: #FAFAFA;
@@ -138,8 +133,6 @@
   @media only screen and (min-width: 768px) {
     .order-btn {
       display: flex;
-      width: 174px;
-      height: 56px;
       padding: 18px 24px 18px 24px;
       border-radius: 60px;
       color: rgb(250, 250, 250);
@@ -222,10 +215,15 @@
     width: 28px;
     height: 28px;
     background-color: transparent;
+    border: 0px solid;
   }
   
   .close-icon {
-    fill: #fff;
+    stroke: #fff;
+  }
+
+  .burger-icon {
+    stroke: #fff;
   }
   
   .burger-menu-list {
@@ -266,9 +264,7 @@
   
   .burger-order-btn {
     display: flex;
-    width: 174px;
-    height: 56px;
-    padding: 18px 24px 18px 24px;
+    padding: 14px 31px 14px 31px;
     border-radius: 60px;
     color: rgb(250, 250, 250);
     background: rgb(237, 59, 68);
