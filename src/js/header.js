@@ -1,5 +1,5 @@
-const navLink = document.querySelector('.menu-link');
-const dropdownMenu = document.querySelector('.menu-list')
+const navLink = document.querySelector('.header-menu-link');
+const dropdownMenu = document.querySelector('.header-menu-list')
 const navBurger = document.querySelector('.burger-btn');
 const overlayMenu = document.querySelector('.burger-menu');
 const closeMenuBtn = document.querySelector('.close-btn');
@@ -14,7 +14,7 @@ orderProjectBtn.addEventListener('click', closeOverlay);
 overlayMenuList.addEventListener('click', closeOverlay);
 
 document.body.addEventListener('click', event => {
-    if (!dropdownMenu.classList.contains('visually-hidden') && !event.target.classList.contains('menu-link')) {
+    if (!dropdownMenu.classList.contains('visually-hidden') && !event.target.classList.contains('header-menu-link')) {
         toggleDropdown();
     }
 });
