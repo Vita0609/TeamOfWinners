@@ -1,29 +1,44 @@
+import imgMobile1x_1 from '@img/projects/projects-mobile_1_1x.jpg';
+import imgMobile2x_1 from '@img/projects/projects-mobile_1_2x.jpg';
+import imgDesktop1x_1 from '@img/projects/projects_1_1x.jpg';
+import imgDesktop2x_1 from '@img/projects/projects_1_2x.jpg';
+
+import imgMobile1x_2 from '@img/projects/projects-mobile_2_1x.jpg';
+import imgMobile2x_2 from '@img/projects/projects-mobile_2_2x.jpg';
+import imgDesktop1x_2 from '@img/projects/projects_2_1x.jpg';
+import imgDesktop2x_2 from '@img/projects/projects_2_2x.jpg';
+
+import imgMobile1x_3 from '@img/projects/projects-mobile_3_1x.jpg';
+import imgMobile2x_3 from '@img/projects/projects-mobile_3_2x.jpg';
+import imgDesktop1x_3 from '@img/projects/projects_3_1x.jpg';
+import imgDesktop2x_3 from '@img/projects/projects_3_2x.jpg';
+
 const projects = [
   {
     title: 'Programming Across Borders: Ideas, Technologies, Innovations',
     tags: ['#react', '#js', '#node js', '#git'],
-    imageSrcM: '../img/projects/projects-mobile_1_1x.jpg',
-    imageSrc2xM: '../img/projects/projects-mobile_1_2x.jpg',
-    imageSrcTD: '../img/projects/projects_1_1x.jpg',
-    imageSrc2xTD: '../img/projects/projects_1_2x.jpg',
+    imageSrcM: imgMobile1x_1,
+    imageSrc2xM: imgMobile2x_1,
+    imageSrcTD: imgDesktop1x_1,
+    imageSrc2xTD: imgDesktop2x_1,
     altText: 'First project',
   },
   {
     title: 'Programming Across Borders: Ideas, Technologies, Innovations',
     tags: ['#react', '#js', '#node js', '#git'],
-    imageSrcM: '../img/projects/projects-mobile_2_1x.jpg',
-    imageSrc2xM: '../img/projects/projects-mobile_2_2x.jpg',
-    imageSrcTD: '../img/projects/projects_2_1x.jpg',
-    imageSrc2xTD: '../img/projects/projects_2_2x.jpg',
+    imageSrcM: imgMobile1x_2,
+    imageSrc2xM: imgMobile2x_2,
+    imageSrcTD: imgDesktop1x_2,
+    imageSrc2xTD: imgDesktop2x_2,
     altText: 'Second project',
   },
   {
     title: 'Programming Across Borders: Ideas, Technologies, Innovations',
     tags: ['#react', '#js', '#node js', '#git'],
-    imageSrcM: '../img/projects/projects-mobile_3_1x.jpg',
-    imageSrc2xM: '../img/projects/projects-mobile_3_2x.jpg',
-    imageSrcTD: '../img/projects/projects_3_1x.jpg',
-    imageSrc2xTD: '../img/projects/projects_3_2x.jpg',
+    imageSrcM: imgMobile1x_3,
+    imageSrc2xM: imgMobile2x_3,
+    imageSrcTD: imgDesktop1x_3,
+    imageSrc2xTD: imgDesktop2x_3,
     altText: 'Third project',
   },
 ];
