@@ -4,18 +4,29 @@ new Accordion('.accordion-container-faq', {
   duration: 900,
   showMultiple: true,
 });
+
 // ОШИБКА!!! если раскоментить код, то получается
 // что текст при открытие становится в столбик
 // и как-будто прыгает, если оставить все как есть то не крутится кнопка
 
 // document.addEventListener('DOMContentLoaded', function () {
-//   const acc = document.querySelectorAll('.list-faq');
-//   faqs.forEach(faq =>
-//     faq.addEventListener('click', () => {
-//       faq.classList.toggle('active');
-//     })
-//   );
+// const acc = document.querySelectorAll('.faq-btn-icon');
+// acc.forEach(faq =>
+//   faq.addEventListener('click', () => {
+//     faq.classList.toggle('active');
+//   })
+// );
+const faqButtons = document.querySelectorAll('.btn-faq');
 
+faqButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const icons = button.querySelectorAll('.faq-btn-icon');
+
+    icons.forEach(icon => {
+      icon.classList.toggle('active');
+    });
+  });
+});
 //   acc.forEach(item => {
 //     const btn = item.querySelector('.btn-faq');
 //     const content = item.querySelector('.ac-panel');
