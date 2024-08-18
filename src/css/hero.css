@@ -20,6 +20,8 @@
   color: #fafafa;
   padding-top: 169px;
   padding-bottom: 212px;
+  display: flex;
+  flex-direction: column;
 }
 
 .soc-menu {
@@ -72,7 +74,8 @@ span {
   }
 
   .logo-lloyd-hero {
-    padding-right: 104px;
+    font-size: 90px;
+    padding-left: 32px;
   }
 
   .soc-menu {
@@ -98,6 +101,8 @@ span {
 
   .logo-lloyd-hero {
     padding-left: 178px;
+    display: flex;
+    flex-direction: column;
   }
   .soc-menu-list {
     font-size: 16px;
