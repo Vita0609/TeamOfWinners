@@ -9,7 +9,8 @@ html {
 
 body {
   font-family: 'Inter Tight', sans-serif;
-  background-color: #242527;
+  color: #ffffff;
+  background-color: #1c1d20;
 }
 
 h1,
@@ -95,4 +96,3 @@ address {
     padding: 82px 0;
   }
 }
-
