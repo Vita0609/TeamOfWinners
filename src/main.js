@@ -8,4 +8,4 @@ import './js/about-me.js';
 import './js/faq.js';
 import './js/scroll.js';
 import './js/benefits.js';
-import './js/heroColors.js';
+import './js/change-theme.js';
