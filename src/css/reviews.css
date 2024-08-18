@@ -2,6 +2,7 @@
   padding-bottom: 64px;
   padding-top: 64px;
 }
+
 .reviews-title {
   text-transform: uppercase;
   font-size: 16px;
@@ -11,13 +12,16 @@
   opacity: 0.4;
   margin-bottom: 32px;
 }
+
 .swiper {
   overflow: hidden;
 }
+
 .reviews-cards {
   display: flex;
   margin-bottom: 32px;
 }
+
 .swiper .reviews-card {
   height: 300px;
   display: flex;
@@ -30,9 +34,11 @@
   background-color: var(--cards);
   margin-right: 0px;
 }
+
 .swiper .reviews-card:hover {
   background-color: var(--cards);
 }
+
 .reviews-card-img {
   width: 48px;
   height: 48px;
@@ -40,11 +46,13 @@
   background-color: var(--main-text);
   margin-bottom: 32px;
 }
+
 .reviews-card-data {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 .reviews-card-name {
   font-size: 20px;
   font-weight: 600;
@@ -52,6 +60,7 @@
   letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
+
 .review-text {
   font-size: 16px;
   font-weight: 500;
@@ -63,6 +72,7 @@
   -webkit-line-clamp: 5;
   overflow: hidden;
 }
+
 .reviews-swiper-buttons {
   display: flex;
   align-items: center;
@@ -70,6 +80,7 @@
   gap: 12px;
   padding: 1px;
 }
+
 .reviews-btn-prev,
 .reviews-btn-next {
   display: flex;
@@ -84,44 +95,52 @@
   transition: background-color 0.3s ease-in-out;
   outline: none;
 }
+
 .reviews-btn-prev:hover,
 .reviews-btn-next:hover {
   background-color: var(--cards);
 }
+
 .reviews-btn-prev:focus,
 .reviews-btn-next:focus {
   background-color: var(--cards);
   box-shadow: 0 0 0 1px var(--main-text);
 }
+
 .reviews-icon {
   width: 24px;
   height: 24px;
   stroke: var(--main-text);
   fill: none;
 }
+
 .reviews-btn-prev:disabled,
 .reviews-btn-next:disabled {
   opacity: 0.3;
 }
+
 @media screen and (min-width: 768px) {
   .reviews-section {
     padding-top: 96px;
     padding-bottom: 96px;
   }
+
   .reviews-btn-prev,
   .reviews-btn-next {
     width: 68px;
     height: 68px;
   }
+
   .swiper-wrapper {
     gap: 0;
   }
+
   .reviews-icon {
-    fill: white;
     width: 32px;
     height: 32px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .reviews-section {
     padding-top: 164px;
