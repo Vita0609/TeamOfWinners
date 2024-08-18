@@ -91,8 +91,8 @@ if (section) {
           },
 
           navigation: {
-            nextEl: '.reviews-btn-next',
-            prevEl: '.reviews-btn-prev',
+            nextEl: '.project-btn-left',
+            prevEl: '.project-btn-right',
           },
         });
       } else {
