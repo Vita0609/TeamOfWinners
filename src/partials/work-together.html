@@ -1,4 +1,4 @@
-<section id="work-together" class="section">
+<footer id="work-together" class="section">
   <div class="container container-footer">
     <div class="titel-container">
       <picture>
@@ -21,8 +21,8 @@
         <image
           src="../img/work-together/image.jpg"
           alt="titel-picture"
-          width="70"
-          height="70"
+          width="44"
+          height="44"
           class="image"
         />
       </picture>
@@ -31,9 +31,9 @@
       </h2>
     </div>
 
-    <form id="form">
+    <form id="form-footer" class="form-footer">
       <input
-        class="input"
+        class="input-footer"
         type="text"
         id="email"
         name="email"
@@ -41,43 +41,47 @@
         required
         pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
       />
+      <div id="input-message-footer" class="message-footer"></div>
       <input
-        class="input"
+        class="input-footer"
         type="text"
         id="comments"
         name="comments"
         placeholder="Comments"
         required
       />
-      <button class="submit-btn" type="submit">Send</button>
+      <button class="submit-btn-footer" type="submit">Send</button>
     </form>
+
     <div id="modal-window" class="modal">
-      <div class="modal-content">
-        <div class="close">
-          <svg class="icon" width="24" height="24">
+      <div class="modal-content-footer" type="" button>
+        <button class="close-footer">
+          <svg class="icon-footer" width="24" height="24">
             <use href="../img/icons.svg#close"></use>
           </svg>
-        </div>
-        <p class="titel-modal">Thank you for your interest in cooperation!</p>
-        <p>
+        </button>
+        <p class="titel-modal-footer">
+          Thank you for your interest in cooperation!
+        </p>
+        <p class="text-modal-footer">
           The manager will contact you shortly to discuss further details and
           opportunities for cooperation. Please stay in touch.
         </p>
       </div>
     </div>
     <address>
-      <ul class="address-list">
-        <li class="address-item">
-          <a class="address-email" href="mailto:lloydjefferson@gmail.com"
+      <ul class="address-list-footer">
+        <li class="address-item-footer">
+          <a class="address-email-footer" href="mailto:lloydjefferson@gmail.com"
             >lloydjefferson@gmail.com</a
           >
         </li>
-        <li class="address-item">
-          <a class="address-tel" href="tel:+3801111111111"
+        <li class="address-item-footer">
+          <a class="address-tel-footer" href="tel:+3801111111111"
             >+380 11 1111 11 11</a
           >
         </li>
       </ul>
     </address>
   </div>
-</section>
+</footer>
