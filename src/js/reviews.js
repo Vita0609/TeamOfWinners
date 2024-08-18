@@ -4,6 +4,7 @@ import 'swiper/css';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import axios from 'axios';
 
 const reviewsList = document.querySelector('.reviews-list');
 
@@ -29,28 +30,25 @@ const swiper = new Swiper('.swiper', {
 
 function updateNavButtons(swiper) {
   const prevButton = document.querySelector('.swiper-button-prev');
-  git;
   const nextButton = document.querySelector('.swiper-button-next');
 
   prevButton.classList.toggle('disabled', swiper.isBeginning);
   nextButton.classList.toggle('disabled', swiper.isEnd);
 }
+
 fetch('https://portfolio-js.b.goit.study/api/reviews')
   .then(response => response.json())
   .then(data => {
-    if (data && data.length) {
-      data.forEach(review => {
-        const listItem = document.createElement('li');
-        listItem.classList.add('swiper-slide');
-        listItem.innerHTML = `
+    if (data && data.length !== 0) {
+      let renderReview = '';
+      data.map(review => {
+        renderReview += `<li class="swiper-slide">
                     <img src="${review.avatar_url}" alt="${review.author}">
                     <p class="author-name">${review.author}</p>
-                    <p class="author-review">${review.review}</p>
+                    <p class="author-review">${review.review}</p></li>
                 `;
-        reviewsList.append(listItem);
       });
-
-      swiper.update();
+      reviewsList.innerHTML = renderReview;
     } else {
       document.querySelector('.message-err').style.display = 'block';
     }
