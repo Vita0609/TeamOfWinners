@@ -10,7 +10,11 @@
   padding: 20px 0;
   background-color: transparent;
 }
-
+.question-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .question-h {
   font-weight: 600;
   font-size: 20px;
@@ -19,11 +23,7 @@
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-.question-div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .btn-faq {
   background-color: transparent;
   border: none;
