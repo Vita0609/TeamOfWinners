@@ -1,19 +1,24 @@
-const scroller = document.querySelector(".marquee");
+addEventListener('DOMContentLoaded', function() {
+const coversSection = document.getElementById('covers-section');
+const marqueeInners = document.querySelectorAll('.covers-marquee__inner');
 
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
-    addAnimation();
+function isInViewport(element) {
+const rect = element.getBoundingClientRect();
+return (
+rect.top >= 0 &&
+rect.left >= 0 &&
+rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+);
 }
-function addAnimation(){
-    scroller.setAttribute('data-animated', true);
-    const scrollerInner = scroller.querySelectorAll(".marquee-inner");
-    const scrollerInnerArray =  Array.from(scrollerInner);
-    scrollerInnerArray.forEach((scroller) =>{
-        const scrollerContent = Array.from(scroller.children);
-        scrollerContent.forEach(item => {
-            const duplItem = item.cloneNode(true);
-            duplItem.setAttribute('aria-hidden', true);
-            scroller.classList.add('duplicated');
-            scroller.appendChild(duplItem);
-        });
-    });
+
+function checkVisibility() {
+if (isInViewport(coversSection)) {
+marqueeInners.forEach(inner => inner.classList.add('moving'));
+} else {
+marqueeInners.forEach(inner => inner.classList.remove('moving'));
 }
+}
+window.addEventListener('scroll', checkVisibility);
+window.addEventListener('resize', checkVisibility);            checkVisibility();
+});

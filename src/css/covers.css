@@ -1,181 +1,112 @@
-.marquee-line {
-    width: 282px;
-    height: 162px;
-}
-
-.cover-section {
-    position: relative;
-
-    width: 100%;
-    margin-bottom: 64px;
-    overflow: hidden;
-    background-color: inherit;
-    height: 508px;
-    background-size: cover;
-    background-image:
-        url("./img/covers/elements_vectors.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
+body,
+html {
+    margin: 0;
     padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.covers-content {
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.covers-marquee {
+    position: relative;
+    right: -800px;
+    left: 0;
     overflow: hidden;
+    background: url(../img/covers/elements_vectors.png) center no-repeat, #242527;
+    background-size: contain;
 }
 
-
-.cover-container {
-    max-width: 375px;
-    width: 100%;
-
-}
-
-
-.marquee {
-    position: absolute;
-    transform: rotate(20deg);
-    left: -80px;
-    bottom: -20px;
-    top: -20px;
+.covers-marquee__inner {
     display: flex;
-    max-width: 375px;
-    height: 508px;
-    flex-wrap: wrap;
-    row-gap: 20px;
+    transform: rotate(16deg);
+    margin-top: 0;
 }
 
-.marquee-inner {
+.covers-marquee__line {
+    flex-shrink: 0;
     display: flex;
-    animation: marqueeScroll 20s linear infinite;
-    gap: 7px;
-    width: 100%;
-    animation-delay: -10s;
-    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-.marquee-inner.duplicated {
-    animation: marqueeScrollDuplicated 20s linear infinite;
+.covers-marquee__line img {
+    width: 282.29px;
+    height: 162.94px;
+    object-fit: fill;
+    margin-right: 20px;
+    margin-top: 25px;
 }
 
-
-.marquee-picture img {
-    width: 100%;
-    height: auto;
-
-
+section {
+    margin: 0;
+    padding: 0;
 }
 
-
-.marquee-inner:nth-child(2) {
-    animation-delay: -15s;
-}
-
-
-@keyframes marqueeScroll {
-    0% {
+@keyframes marqueeLine {
+    from {
         transform: translateX(0%);
     }
 
-    100% {
+    to {
         transform: translateX(-100%);
     }
 }
 
-
-@keyframes marqueeScrollDuplicated {
-    from {
-        transform: translate(0%);
-    }
-
-    to {
-        transform: translate(calc(-50% - 3px));
-    }
+.covers-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-
-
-
-@media only screen and (min-width: 768px) {
-
-
-    .cover-section {
-
-        margin-bottom: 96px;
-        height: 960px;
-
-    }
-
-    .cover-container {
-        max-width: 768px;
-    }
-
-    .marquee {
-        max-width: 768px;
-        row-gap: 80px;
-        left: -20px;
-        top: -100px;
-    }
-
-    .marquee-inner {
-        gap: 40px;
-    }
-
-    .marquee-line {
+@media screen and (min-width: 768px) {
+    .covers-marquee__line img {
         width: 544px;
         height: 314px;
     }
 
-    @keyframes marqueeScrollDuplicated {
-        from {
-            transform: translate(0%);
-        }
-
-        to {
-            transform: translate(calc(-50% - 20px));
-        }
+    .covers-marquee__line {
+        margin-right: 40px;
+        margin-top: 45px;
     }
-
 }
 
-
-@media only screen and (min-width: 1440px) {
-
-    .cover-section {
-
-        margin-bottom: 164px;
-
-    }
-
-    .cover-container {
-        max-width: 1440px;
-    }
-
-    .marquee {
-        left: -150px;
-        top: -400px;
-    }
-
-    .marquee-line {
+@media screen and (min-width: 1440px) {
+    .covers-marquee__line img {
         width: 544px;
         height: 314px;
     }
 
-    @keyframes marqueeScrollDuplicated {
-        from {
-            transform: translate(0%);
-        }
-
-        to {
-            transform: translate(calc(-50% - 20px));
-        }
+    .covers-marquee__line {
+        margin-right: 40px;
+        margin-top: 45px;
     }
-
 }
