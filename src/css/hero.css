@@ -1,6 +1,9 @@
 /* ---------------- MOBILE ---------------- */
 .section-hero {
+  max-width: 100%;
   background-image: url(../img/hero/mobile-hero.png);
+  background-position: center;
+  background-size: cover;
 }
 
 @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
@@ -22,6 +25,7 @@
 .soc-menu {
   display: flex;
   gap: 4px;
+  padding-bottom: 32px;
 }
 
 .soc-menu-list {
@@ -75,6 +79,7 @@ span {
 
 @media screen and (min-width: 1440px) {
   .section-hero {
+    max-width: 1440px;
     background-image: url(../img/hero/desktop-hero.png);
   }
 
