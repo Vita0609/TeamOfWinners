@@ -8,7 +8,7 @@
                 d="m24 12-8 8-8-8" />
         </symbol>
 
-        <symbol id="arrow-narrow-right" viewBox="0 0 40 40">
+        <symbol id="arrow-narrow-left" viewBox="0 0 40 40">
             <path d="M6.6665 20H33.3332" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" />
             <path d="M23.3335 10L33.3335 20L23.3335 30" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round"
