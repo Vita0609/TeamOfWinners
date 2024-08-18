@@ -1,11 +1,11 @@
 /* ---------------- MOBILE ---------------- */
 .section-hero {
-  background-image: url(../img/hero/Rectangle-mob1.png);
+  background-image: url(../img/hero/mobile-hero.png);
 }
 
 @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .section-hero {
-    background-image: url(../img/hero/Rectangle-mob2.png);
+    background-image: url(../img/hero/mobile-hero@2x.png);
   }
 }
 
@@ -44,19 +44,19 @@ span {
   color: #fafafa;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 6px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
   height: 37px;
 }
 
 /* ----------------------- TABLET -------------------------- */
 @media screen and (min-width: 768px) {
   .section-hero {
-    background-image: url(../img/hero/Rectangle-tab1.png);
+    background-image: url(../img/hero/tablet-hero.png);
   }
 
   @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .section-hero {
-      background-image: url(../img/hero/Rectangle-tab2.png) 50%;
+      background-image: url(../img/hero/tablet-hero@2x.png);
     }
   }
 
@@ -75,12 +75,12 @@ span {
 
 @media screen and (min-width: 1440px) {
   .section-hero {
-    background-image: url(../img/hero/Rectangle-desc1.png);
+    background-image: url(../img/hero/desktop-hero.png);
   }
 
   @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .section-hero {
-      background-image: url(../img/hero/Rectangle-desc2.png) 50%;
+      background-image: url(../img/hero/desktop-hero@2x.png);
     }
   }
 
