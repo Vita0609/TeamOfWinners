@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 const reviewsList = document.querySelector('.reviews-list');
 
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -29,6 +29,7 @@ const swiper = new Swiper('.swiper', {
 
 function updateNavButtons(swiper) {
   const prevButton = document.querySelector('.swiper-button-prev');
+  git;
   const nextButton = document.querySelector('.swiper-button-next');
 
   prevButton.classList.toggle('disabled', swiper.isBeginning);
