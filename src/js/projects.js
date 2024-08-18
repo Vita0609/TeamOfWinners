@@ -1,3 +1,6 @@
+import Swiper from 'swiper';
+import 'swiper/css';
+import { Navigation, Keyboard } from 'swiper/modules';
 const projects = [
   {
     title: 'Programming Across Borders: Ideas, Technologies, Innovations',
@@ -79,13 +82,13 @@ function renderProjects() {
 
 function initializeSwiper() {
   const swiper = new Swiper('.swiper-container', {
-    loop: false,
+    modules: [Navigation, Keyboard],
+    slidesPerView: 1,
+    spaceBetween: 100,
     navigation: {
       nextEl: '.project-btn-right',
       prevEl: '.project-btn-left',
     },
-    slidesPerView: 1,
-    spaceBetween: 30,
   });
 }
 
