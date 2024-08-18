@@ -1,3 +1,37 @@
+.about-skills-item.active {
+    background-color: red; /* Цвет фона для активного слайда */
+    color: white; /* Цвет текста для активного слайда */
+  }
+  
+
+.skills-wrapper {
+    display: flex;
+    align-items: center;
+    width: 343px;
+  }
+  
+
+.swiper-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.swiper-btn {
+    display: flex;
+    background:none;
+    border:none;
+    cursor: pointer;
+}
+
+.project-icon-right {
+    stroke: #3b3b3b;
+    fill: none;
+    width: 40px;
+}
+  
+
 .about-inform-container {
     display: flex;
     flex-direction: column;
@@ -9,7 +43,6 @@ border-radius: 24px;
 max-width: 343px;
 height: 500px;
 background-color:#242527;
-margin-bottom: 16px;
 }
 
 .service-text {
@@ -56,6 +89,10 @@ border-radius: 24px;
     margin-bottom: 12px;
 }
 
+.about-box {
+margin-bottom: 32px;
+}
+
 .about-accordion-container {
 display: flex;
 align-items: flex-start;
@@ -65,7 +102,6 @@ gap: 20px;
 max-width: 343px;
 height: 628px;
 margin-bottom: 32px;
-margin-top: 32px;
 }
 
 .about-ac-list{
@@ -106,6 +142,8 @@ color: #fafafa;
     width: 36px;
     height: 36px;
     background: #1c1d20;
+    cursor: pointer;
+    transform: rotate(180deg);
 }
 
 .aboutme-item-icon {
@@ -126,6 +164,7 @@ stroke: #fafafa;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 32px;
+    flex-grow: 1; 
 
 }
 .about-skills-list {
@@ -173,7 +212,6 @@ box-sizing: border-box;
     max-width: 704px;
     height: 700px;
     background:#242527;
-    margin-bottom: 16px;
     }
      
     .service-text {
@@ -230,6 +268,10 @@ box-sizing: border-box;
     }
 
     .about-ac-list{
+        margin-bottom: 64px;
+    }
+
+    .about-box {
         margin-bottom: 64px;
     }
     
@@ -299,7 +341,10 @@ box-sizing: border-box;
         gap: 10px; 
         margin-bottom: 32px;
     }
-   
+
+    .skills-wrapper {
+        width: 704px;
+      }   
        
 }
 
@@ -324,17 +369,20 @@ box-sizing: border-box;
         max-width: 680px;
         height: 700px;
         background: #242527;
+    }
+
+    .about-box {
         margin-bottom: 96px;
-        }
+    }
          
-        .service-text {
-            font-weight: 500;
-            font-size: 38px;
-            line-height: 1.05;
-            letter-spacing: -0.03em;
-            text-transform: uppercase;
-            color: #fafafa;
-            padding: 64px;
+    .service-text {
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #fafafa;
+        padding: 64px;
         }
         
         .service-functional {
@@ -401,7 +449,7 @@ box-sizing: border-box;
             height: 40px;
             background: #1c1d20;
         }
-        
+            
         .aboutme-item-icon {
         stroke: #fafafa;
         }
@@ -412,10 +460,6 @@ box-sizing: border-box;
             background-color: transparent;
             border: none;
             border-top: 1px solid rgba(250, 250, 250, 0.2);
-        }
-
-        .about-skills-list .about-skills-item {
-        display: list-item;
         }
 
         .about-skills-container {
@@ -456,5 +500,11 @@ box-sizing: border-box;
             flex-direction: column; 
             gap: 10px; 
             margin-bottom: 32px;
+
+        }
+
+          
+        .swiper-container{
+            margin-left: 72px;
         }
 }

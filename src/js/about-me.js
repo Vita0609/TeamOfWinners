@@ -1,7 +1,14 @@
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+
+import Swiper from 'swiper';
+import { Keyboard, Navigation } from 'swiper/modules';
+
 const generateSkillsMarkup = () => {
-    return `
-      <div class="about-skills-container swiper-container">
-        <ul class="about-skills-list swiper-wrapper">
+  return `
+    <div class="skills-wrapper">
+      <div class="about-skills-container">
+        <ul class="about-skills-list">
           <li class="about-skills-item swiper-slide">HTML/CSS</li>
           <li class="about-skills-item swiper-slide">JavaScript</li>
           <li class="about-skills-item swiper-slide">React</li>
@@ -9,74 +16,75 @@ const generateSkillsMarkup = () => {
           <li class="about-skills-item swiper-slide">React Native</li>
           <li class="about-skills-item swiper-slide">Soft skills</li>
         </ul>
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
-    `;
-  };
+      <div class="swiper-container">
+        <button type="button" class="swiper-btn">
+          <svg class="project-icon-right">
+            <use href="../img/icons.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  `;
+};
 
-  const aboutMeContainer = document.querySelector('.about-accordion-container');
+const aboutMeContainer = document.querySelector('.about-accordion-container');
+const skillsMarkup = generateSkillsMarkup();
+aboutMeContainer.insertAdjacentHTML('beforeend', skillsMarkup);
 
-  const skillsMarkup = generateSkillsMarkup();
-
-  aboutMeContainer.insertAdjacentHTML('beforeend', skillsMarkup);
-
-
-
-  
-  document.addEventListener('DOMContentLoaded', () => {
-    const accButtons = document.querySelectorAll('.aboutme-accordion-btn');
-  
-    accButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-        const targetTextClass = button.classList.contains('about-btn') ? 'about-text' :
-                                button.classList.contains('role-btn') ? 'role-text' :
-                                button.classList.contains('education-btn') ? 'education-text' :
-                                null;
-        if (targetTextClass) {
-          const targetTexts = document.querySelectorAll(`.${targetTextClass}`);
-  
-          targetTexts.forEach((text) => {
-            text.classList.toggle('visually-hidden');
-          });
-
-          const icon = button.querySelector('svg use');
-          const isExpanded = !targetTexts[0].classList.contains('visually-hidden');
-  
-          if (isExpanded) {
-            icon.setAttribute('href', '../img/icons.svg#collapse'); 
-          } else {
-            icon.setAttribute('href', '../img/icons.svg#expand'); 
-          }
-        }
-      });
-    });
-  
-    const firstItem = document.querySelector('.about-ac-item.open .about-inform-container');
-    if (firstItem) {
-      firstItem.querySelectorAll('.about-text').forEach((text) => {
-        text.classList.remove('visually-hidden');
-      });
-    }
+document.addEventListener('DOMContentLoaded', () => {
+  // Инициализация аккордеона
+  new Accordion('.about-accordion-container', {
+    duration: 400,
+    showMultiple: true,
+    openOnInit: [0],
   });
 
-// Иници Swiper
-  
-const newSwiper = new Swiper('.swiper-container',{
-  loop: true,
-  speed: 400,
-  spaceBetween: 100,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
-  mousewheel: true,
-})
+  // Функция для обновления иконок
+  const updateIcons = () => {
+    const items = document.querySelectorAll('.aboutme-accordion-btn');
+    items.forEach((button) => {
+      const icon = button.querySelector('svg use');
+      const isExpanded = button.parentElement.classList.contains('is-open');
+      if (isExpanded) {
+        icon.setAttribute('href', '../img/icons.svg#collapse'); 
+      } else {
+        icon.setAttribute('href', '../img/icons.svg#expand'); 
+      }
+    });
+  };
 
-const swiperBtn = document.querySelector(".swiper-button-next").swiper;
-swiper.slideNext();
+  // Добавление обработчиков событий для обновления иконок
+  document.querySelectorAll('.about-me-accordion-container .accordion-item').forEach((item) => {
+    item.addEventListener('accordion:open', updateIcons);
+    item.addEventListener('accordion:close', updateIcons);
+  });
+
+  // Убедитесь, что иконки обновлены после инициализации
+  updateIcons();
+
+  // Инициализация Swiper
+  const newSwiper = new Swiper('.about-skills-container', {
+    modules: [Navigation, Keyboard],
+    loop: true,
+    slidesPerView: 2,
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      1440: {
+        slidesPerView: 6,
+      },
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+      pageUpDown: true,
+    },
+    mousewheel: true,
+  });
+
+  document.querySelector(".swiper-btn").addEventListener('click', () => {
+    newSwiper.slideNext();
+  });
+});
