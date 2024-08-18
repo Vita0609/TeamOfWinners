@@ -28,9 +28,24 @@
             
         }
         .red {
-            background-color: orangered;
+            background-color: #ED3B44;
             
         }
+        .lime {
+            background-color: #0041E8;
+        }
+        .blue {
+            background-color: #E6533C;
+        }
+        .coral {
+            background-color: #2B4441;
+        }
+        .gray {
+            background-color: #FF7F08;
+        }
+        
     }
+
+
 }
 
