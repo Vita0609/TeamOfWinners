@@ -10,6 +10,7 @@
   color: #fff;
   border: 1px solid;
   transition: 200ms;
+  z-index: 99;
 
   &:hover {
     opacity: 0.9;
@@ -21,6 +22,7 @@
   inset: 0;
   background-color: #0005;
   transition: 500ms;
+  z-index: 99;
 
   &:not(.open) {
     opacity: 0;

@@ -10,6 +10,7 @@
   color: #fff;
   border: 1px solid;
   transition: 200ms;
+  z-index: 99;
 
   &:hover {
     opacity: 0.9;
