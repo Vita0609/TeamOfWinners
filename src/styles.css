@@ -5,7 +5,7 @@
 @import url('./css/variables.css');
 
 @import url('./css/header.css');
-@import url('./css/hero.css');
+@import url('./partials/hero/hero.css');
 @import url('./css/about-me.css');
 @import url('./css/benefits.css');
 @import url('./css/projects.css');
