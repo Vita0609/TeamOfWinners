@@ -56,7 +56,7 @@
 
 .submit-btn-footer {
   align-self: flex-start;
-  background-color: #ff3d3d;
+  background-color: var(--accent);
   border: none;
   color: #ffffff;
   padding: 10px 20px;
@@ -73,7 +73,7 @@
 }
 
 .submit-btn-footer:hover {
-  background-color: #e0373f;
+  background-color: var(--accent);
 }
 
 .address-list-footer {
