@@ -9,3 +9,4 @@ import './js/projects.js';
 import './js/reviews.js';
 import './js/swagger-api.js';
 import './partials/footer/js/work-together.js';
+import './js/elements.js';
