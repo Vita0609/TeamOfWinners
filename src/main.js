@@ -6,7 +6,6 @@ import './js/work-together.js';
 import './js/swagger-api.js';
 import './js/about-me.js';
 import './js/faq.js';
-import './js/scroll.js';
 import './js/benefits.js';
 import './js/change-theme.js';
 import './js/scroll-btn.js';
