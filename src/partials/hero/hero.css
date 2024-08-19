@@ -3,14 +3,14 @@
   max-width: 375px;
   margin: 0 auto;
   padding: 0 17px;
-  background-image: url(../img/hero/mobile-hero.png);
+  background-image: url(/img/hero/mobile-hero.png);
   background-position: center;
   background-size: cover;
 }
 
 @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .section-hero {
-    background-image: url(../img/hero/mobile-hero@2x.png);
+    background-image: url(/img/hero/mobile-hero@2x.png);
   }
 }
 
