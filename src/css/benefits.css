@@ -55,7 +55,7 @@
 }
 
 .cards-item-container {
-  background-color: #ed3b44;
+  background-color: var(--accent);
   border-radius: 10px;
   width: 48px;
   height: 48px;

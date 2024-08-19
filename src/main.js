@@ -1,6 +1,7 @@
 import './js/about-me.js';
 import './js/benefits.js';
 import './js/change-theme.js';
+import './js/scroll-btn.js';
 import './js/covers.js';
 import './js/faq.js';
 import './js/header.js';
