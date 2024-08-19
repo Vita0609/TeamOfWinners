@@ -1,0 +1,72 @@
+.change-theme {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 11.5px;
+  color: #fff;
+  border: 1px solid;
+  transition: 200ms;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #0005;
+  transition: 500ms;
+
+  &:not(.open) {
+    opacity: 0;
+    pointer-events: none;
+
+    .colors {
+      translate: 10%;
+    }
+  }
+
+  .colors {
+    transition: 500ms;
+    left: 50%;
+    top: 87%;
+    translate: -50%;
+    position: absolute;
+
+    button {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      border: none;
+    }
+
+    .red {
+      background-color: #ed3b44;
+    }
+
+    .lime {
+      background-color: #c6e327;
+    }
+
+    .blue {
+      background-color: #0041e8;
+    }
+
+    .coral {
+      background-color: #e6533c;
+    }
+
+    .gray {
+      background-color: #2b4441;
+    }
+
+    .orange {
+      background-color: #ff7f08;
+    }
+  }
+}
