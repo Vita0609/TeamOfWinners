@@ -47,8 +47,8 @@
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-faq:hover {
-  border-color: #e0373f;
-  color: #e0373f;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 .open-question {
   overflow: hidden;
