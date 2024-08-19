@@ -1,15 +1,14 @@
 import 'izitoast/dist/css/iziToast.min.css';
 import './js/about-me.js';
-import './js/benefits.js';
+
 import './js/change-theme.js';
 import './js/covers.js';
-import './partials/faq/js/faq.js';
 import './js/header.js';
 import './js/projects.js';
 import './js/scroll-btn.js';
+import './partials/faq/js/faq.js';
 import './partials/footer/js/work-together.js';
 
+import './js/elements.js';
 import './partials/reviews/js/reviews.js';
 import './swagger-api.js';
-import './js/elements.js';
-
