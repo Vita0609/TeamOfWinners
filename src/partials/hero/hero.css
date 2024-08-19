@@ -1,6 +1,8 @@
 /* ---------------- MOBILE ---------------- */
 .section-hero {
-  max-width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 17px;
   background-image: url(../img/hero/mobile-hero.png);
   background-position: center;
   background-size: cover;
@@ -18,7 +20,7 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
-  padding-top: 169px;
+  padding-top: 281px;
   padding-bottom: 212px;
   display: flex;
   flex-direction: column;
@@ -26,8 +28,9 @@
 
 .soc-menu {
   display: flex;
-  gap: 4px;
+  gap: 8px 4px;
   padding-bottom: 32px;
+  flex-wrap: wrap;
 }
 
 .soc-menu :hover {
@@ -49,8 +52,14 @@
   justify-content: center;
 }
 
-span {
+.hero-soc-link {
   color: #fafafa;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  letter-spacing: -0.02em;
 }
 .soc-menu-email {
   font-size: 14px;
@@ -65,6 +74,14 @@ span {
 @media screen and (min-width: 768px) {
   .section-hero {
     background-image: url(../img/hero/tablet-hero.png);
+    padding: 0 32px;
+    max-width: 768px;
+  }
+
+  .hero-soc-link {
+    font-size: 16px;
+
+    line-height: 19.36px;
   }
 
   @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
@@ -75,7 +92,8 @@ span {
 
   .logo-lloyd-hero {
     font-size: 90px;
-    padding-left: 32px;
+    padding-top: 300px;
+    padding-bottom: 187px;
   }
 
   .soc-menu {
@@ -100,9 +118,10 @@ span {
   }
 
   .logo-lloyd-hero {
-    padding-left: 178px;
+    padding-left: 146px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 243px;
   }
   .soc-menu-list {
     font-size: 16px;
