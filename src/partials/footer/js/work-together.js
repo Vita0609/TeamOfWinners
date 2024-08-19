@@ -1,6 +1,6 @@
 import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
-import ApiService from '../../../js/swagger-api';
+
+import ApiService from '../../../swagger-api';
 import { updateButtonText, useLoading, validateEmail } from './operations';
 
 const form = document.getElementById('form-footer');
