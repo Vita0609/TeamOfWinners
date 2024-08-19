@@ -12,6 +12,11 @@
   transition: 200ms;
   z-index: 99;
 
+  &[hidden] {
+    display: inline-block;
+    translate: 50vw;
+  }
+
   &:hover {
     opacity: 0.9;
   }
