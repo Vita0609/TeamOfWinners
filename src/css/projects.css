@@ -49,7 +49,7 @@
   border-radius: 60px;
   border: none;
   color: #ffffff;
-  background-color: #ed3b44;
+  background-color: var(--accent);
   text-decoration: none;
   transition: background-color 250ms ease-in-out;
 }
@@ -57,7 +57,7 @@
 .project-card-btn:hover,
 .project-card-btn:active,
 .project-card-btn:focus {
-  background-color: #e0373f;
+  background-color: var(--accent);
 }
 
 .project-image-wrapper {
@@ -92,7 +92,7 @@
 .swiper-btn:hover,
 .swiper-btn:active,
 .swiper-btn:focus {
-  background-color: #e0373f;
+  background-color: var(--accent);
 }
 
 .swiper-btn:disabled {
