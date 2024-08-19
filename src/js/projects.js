@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Programming Across Borders: Ideas, Technologies, Innovations',
     tags: ['#react', '#js', '#node js', '#git'],
-    imageSrcM: '/img/projects/projects-mobile_1_1x.jpg',
+    imageSrcM: './img/projects/projects-mobile_1_1x.jpg',
     imageSrc2xM: './img/projects/projects-mobile_1_2x.jpg',
     imageSrcTD: './img/projects/projects_1_1x.jpg',
     imageSrc2xTD: './img/projects/projects_1_2x.jpg',
