@@ -30,7 +30,6 @@ form.addEventListener('submit', async event => {
     setLoading(true);
     updateButtonText(button, isLoading());
     const response = await ApiService.sendEmail(data);
-    console.log(response);
     form.reset();
     modalText.textContent = response.title;
     modalDescription.textContent = response.message;
