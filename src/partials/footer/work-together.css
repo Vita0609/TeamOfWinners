@@ -1,0 +1,245 @@
+.titel-container {
+  position: relative;
+  margin-bottom: 64px;
+  max-width: 267px;
+}
+
+.footer-image {
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  position: absolute;
+}
+
+.titel-footer {
+  text-indent: 52px;
+  font-size: 40px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+}
+
+.footer-splitter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-footer {
+  width: 100%;
+
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background-color: rgba(28, 29, 32, 1);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  padding-bottom: 20px;
+}
+
+.input-footer:focus {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+
+.input-footer #email {
+  text-overflow: ellipsis;
+}
+
+.submit-btn-footer {
+  align-self: flex-start;
+  background-color: #ff3d3d;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-bottom: 64px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+.submit-btn-footer:hover {
+  background-color: #e0373f;
+}
+
+.address-list-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.address-item-footer {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px 12px;
+  color: #fafafa;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.address-item-footer:hover {
+  border: 1px solid #fafafa;
+}
+
+.address-email-footer {
+  color: inherit;
+  text-decoration: none;
+}
+
+.address-tel-footer {
+  color: inherit;
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 768px) {
+  .footer-splitter {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .titel-container {
+    max-width: 532px;
+  }
+  .footer-image {
+    border-radius: 24px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .titel-footer {
+    text-indent: 90px;
+    font-size: 64px;
+    line-height: 1.1;
+    display: inline-block;
+    position: relative;
+  }
+
+  .form-footer {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 18px;
+  }
+
+  .input-footer {
+    width: 245px;
+  }
+
+  .submit-btn-footer {
+    color: #ffffff;
+    padding: 75px 75px;
+
+    margin-bottom: 0;
+  }
+
+  .address-list-footer {
+    gap: 8px;
+  }
+
+  .address-item-footer {
+    font-size: 16px;
+    padding: 18px 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 82px 196px 169px 196px;
+  }
+  .container-footer {
+    max-width: 1048px;
+  }
+  .input-footer {
+    width: 390px;
+  }
+}
+
+/*------MODAL------*/
+.modal-overlay {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  padding: 0 16px;
+  background: rgba(15, 15, 16, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-overlay.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: rgba(28, 29, 32, 1);
+  max-width: 343px;
+  padding: 64px 32px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.modal-description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.close-icon {
+  stroke: #fff;
+  width: 22px;
+  height: 22px;
+}
+
+.close-modal {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media (min-width: 768px) {
+  .modal-content {
+    padding: 64px 64px;
+    max-width: 493px;
+  }
+}

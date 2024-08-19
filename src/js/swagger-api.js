@@ -1,14 +1,28 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://portfolio-js.b.goit.study/api';
+class ApiService {
+  async sendEmail(data) {
+    try {
+      const response = await axios.post(
+        'https://scary-bellanca-subx1s0o-48ef86b3.koyeb.app/mail/send',
+        data
+      );
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
+  }
 
-async function postData(obj) {
-  try {
-    const response = await axios.post(`${BASE_URL}/requests`, obj);
-    return response.data;
-  } catch (error) {
-    throw error;
+  async getReviews() {
+    try {
+      const response = await axios.get(
+        'https://portfolio-js.b.goit.study/api/requests'
+      );
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
   }
 }
 
-export { postData };
+export default new ApiService();
