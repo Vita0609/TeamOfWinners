@@ -16,7 +16,7 @@ class ApiService {
   async getReviews() {
     try {
       const response = await axios.get(
-        'https://portfolio-js.b.goit.study/api/requests'
+        'https://portfolio-js.b.goit.study/api/reviews'
       );
       return response.data;
     } catch (error) {

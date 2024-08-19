@@ -11,7 +11,7 @@
 @import url('./css/projects.css');
 @import url('./css/faq.css');
 @import url('./css/covers.css');
-@import url('./css/reviews.css');
+@import url('./partials/reviews/reviews.css');
 @import url('./partials/footer/work-together.css');
 @import url('./css/change-theme.css');
 @import url('./css/scroll-btn.css');
