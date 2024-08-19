@@ -9,6 +9,5 @@ import './js/scroll-btn.js';
 import './partials/faq/js/faq.js';
 import './partials/footer/js/work-together.js';
 
-import './js/elements.js';
 import './partials/reviews/js/reviews.js';
 import './swagger-api.js';
