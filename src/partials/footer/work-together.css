@@ -168,6 +168,27 @@
   .container-footer {
     max-width: 1048px;
   }
+
+  /* .container-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 290px;
+    width: 660px;
+    height: 100%;
+    background: repeating-linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 9px,
+      rgba(0, 0, 0, 1) 23px,
+      rgba(0, 0, 0, 0) 23px,
+      rgba(0, 0, 0, 0) 66px
+    );
+    pointer-events: none;
+    opacity: 0.05;
+    z-index: -1;
+  } */
   .input-footer {
     width: 390px;
   }
