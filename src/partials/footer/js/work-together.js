@@ -8,6 +8,7 @@ const modalText = document.querySelector('.modal-text');
 const modalDescription = document.querySelector('.modal-description');
 const modal = document.querySelector('.modal-overlay');
 const emailInput = document.querySelector('#email');
+const commentInput = document.querySelector('#comment');
 const closeButton = document.querySelector('.close-modal');
 const button = document.querySelector('.submit-btn-footer');
 const [isLoading, setLoading] = useLoading();
@@ -16,13 +17,28 @@ form.addEventListener('submit', async event => {
   event.preventDefault();
   const formData = new FormData(form);
   const email = formData.get('email');
+  const comment = formData.get('comments');
   const data = {
     email: email,
-    comment: formData.get('comments'),
+    comment: comment,
   };
 
+  let isValid = true;
+
+  emailInput.style.borderColor = '';
+  commentInput.style.borderColor = '';
+
   if (!validateEmail(email)) {
-    emailInput.style.borderColor = ' red';
+    emailInput.style.borderColor = 'red';
+    isValid = false;
+  }
+
+  if (!comment.trim()) {
+    commentInput.style.borderColor = 'red';
+    isValid = false;
+  }
+
+  if (!isValid) {
     return;
   }
 
