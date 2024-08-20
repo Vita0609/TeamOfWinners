@@ -303,7 +303,7 @@ section#about-me ul.swiper-wrapper .swiper-slide {
 }
 
 section#about-me .swiper-slide-active {
-  background-color: #ed3b44;
+  background-color: var(--accent);
   border: none;
 }
 
