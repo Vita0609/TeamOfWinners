@@ -3,14 +3,14 @@
   max-width: 375px;
   margin: 0 auto;
   padding: 0 17px;
-  background-image: url(../img/hero/mobile-hero.png);
+  background-image: url(/img/hero/mobile-hero.png);
   background-position: center;
   background-size: cover;
 }
 
 @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .section-hero {
-    background-image: url(../img/hero/mobile-hero@2x.png);
+    background-image: url(/img/hero/mobile-hero@2x.png);
   }
 }
 
@@ -73,7 +73,7 @@
 /* ----------------------- TABLET -------------------------- */
 @media screen and (min-width: 768px) {
   .section-hero {
-    background-image: url(../img/hero/tablet-hero.png);
+    background-image: url(/img/hero/tablet-hero.png);
     padding: 0 32px;
     max-width: 768px;
   }
@@ -86,7 +86,7 @@
 
   @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .section-hero {
-      background-image: url(../img/hero/tablet-hero@2x.png);
+      background-image: url(/img/hero/tablet-hero@2x.png);
     }
   }
 
@@ -108,12 +108,12 @@
 @media screen and (min-width: 1440px) {
   .section-hero {
     max-width: 1440px;
-    background-image: url(../img/hero/desktop-hero.png);
+    background-image: url(/img/hero/desktop-hero.png);
   }
 
   @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .section-hero {
-      background-image: url(../img/hero/desktop-hero@2x.png);
+      background-image: url(/img/hero/desktop-hero@2x.png);
     }
   }
 

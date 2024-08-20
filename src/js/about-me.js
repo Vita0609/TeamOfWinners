@@ -1,4 +1,6 @@
 
+import 'accordion-js/dist/accordion.min.css';
+
 import Swiper from 'swiper';
 import 'swiper/css';
 
@@ -43,6 +45,11 @@ new Swiper(swiperCont, {
       slidesPerView: 6,
       width: 1200,
     },
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+    pageUpDown: true,
   },
 });
 

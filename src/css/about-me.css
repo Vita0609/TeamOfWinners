@@ -26,6 +26,7 @@
 .about-descr-section {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   gap: 16px;
   margin-bottom: 32px;
 }

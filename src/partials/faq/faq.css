@@ -72,9 +72,7 @@
   stroke: currentColor;
 }
 .faq-btn-icon {
-  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .active {
   display: none;
