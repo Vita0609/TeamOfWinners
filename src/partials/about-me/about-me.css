@@ -320,14 +320,21 @@ section#about-me .swiper-button-next {
 }
 
 .about-me-swiper-btn {
-  background-color: #1c1d20;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .about-me-swiper-btn-icon {
   stroke: #3b3b3b;
+  transition: stroke ease 250ms;
   fill: none;
   width: 28px;
   height: 28px;
+}
+
+.about-me-swiper-btn:hover .about-me-swiper-btn-icon {
+  stroke: #fff;
 }
 
 @media screen and (min-width: 768px) {
