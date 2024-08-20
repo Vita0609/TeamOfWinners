@@ -1,11 +1,13 @@
+import 'accordion-js/dist/accordion.min.css';
 import 'izitoast/dist/css/iziToast.min.css';
-import './js/about-me.js';
+import 'swiper/css';
 import './js/change-theme.js';
-import './partials/header/js/header.js';
 import './js/projects.js';
 import './js/scroll-btn.js';
+import './partials/about-me/js/about-me.js';
 import './partials/covers/js/covers.js';
 import './partials/faq/js/faq.js';
 import './partials/footer/js/work-together.js';
+import './partials/header/js/header.js';
 import './partials/reviews/js/reviews.js';
 import './swagger-api.js';
