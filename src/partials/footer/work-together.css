@@ -12,6 +12,14 @@
   border-radius: 12px;
   position: absolute;
 }
+.work-bg-image {
+  position: absolute;
+  left: 680px;
+  top: 0;
+  z-index: -1;
+  width: 728px;
+  transform: translateY(-32px);
+}
 
 .title-footer {
   text-indent: 52px;
