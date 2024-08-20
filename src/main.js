@@ -8,6 +8,5 @@ import './js/projects.js';
 import './js/scroll-btn.js';
 import './partials/faq/js/faq.js';
 import './partials/footer/js/work-together.js';
-
 import './partials/reviews/js/reviews.js';
 import './swagger-api.js';
