@@ -1,9 +1,9 @@
 import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
+
 
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
-import 'swiper/css';
+
 
 new Accordion('.about-me-accordion-container', {
   duration: 400,
