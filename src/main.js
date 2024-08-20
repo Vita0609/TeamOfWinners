@@ -3,10 +3,7 @@ import './js/about-me.js';
 
 import './js/change-theme.js';
 
-import './js/covers.js';
 import './partials/header/js/header.js';
-
-import './js/header.js';
 
 import './js/projects.js';
 import './js/scroll-btn.js';
