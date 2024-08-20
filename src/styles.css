@@ -4,7 +4,7 @@
 @import url('./css/reset.css');
 @import url('./css/variables.css');
 
-@import url('./css/header.css');
+@import url('./partials/header/header.css');
 @import url('./partials/hero/hero.css');
 @import url('./css/about-me.css');
 @import url('./partials/benefits/benefits.css');
