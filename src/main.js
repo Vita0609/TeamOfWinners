@@ -10,4 +10,5 @@ import './partials/faq/js/faq.js';
 import './partials/footer/js/work-together.js';
 import './partials/header/js/header.js';
 import './partials/reviews/js/reviews.js';
+import './partials/benefits/js/benefits.js';
 import './swagger-api.js';

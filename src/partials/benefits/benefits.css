@@ -5,6 +5,12 @@
   gap: 32px;
 }
 
+.canvas-decoration {
+  position: absolute;
+  display: block;
+  z-index: -1;
+}
+
 @media screen and (min-width: 1440px) {
   .benefits-container {
     flex-direction: row;
