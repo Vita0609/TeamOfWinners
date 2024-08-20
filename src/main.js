@@ -3,9 +3,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 import 'swiper/css';
 import './js/about-me.js';
 import './js/change-theme.js';
-
 import './partials/header/js/header.js';
-
 import './js/projects.js';
 import './js/scroll-btn.js';
 import './partials/covers/js/covers.js';
