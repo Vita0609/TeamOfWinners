@@ -1,5 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
+  <symbol id="icon-menu" viewBox="0 0 28 28">
+  <path d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+</symbol>
     <symbol id="icon-hourglass" viewBox="0 0 32 32">
       <path fill="none" stroke="#fafafa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M24.217 2.667H7.783c-.617 0-1.117.5-1.117 1.117a13.4 13.4 0 0 0 3.925 9.475l1.626 1.626c.161.161.242.242.3.32a1.335 1.335 0 0 1 0 1.594c-.058.077-.139.158-.3.32l-1.626 1.626a13.4 13.4 0 0 0-3.925 9.475c0 .617.5 1.117 1.117 1.117h16.434c.617 0 1.117-.5 1.117-1.117a13.4 13.4 0 0 0-3.925-9.475l-1.626-1.626c-.161-.161-.242-.242-.3-.32a1.332 1.332 0 0 1 0-1.594c.058-.077.139-.158.3-.32l1.626-1.626a13.4 13.4 0 0 0 3.925-9.475c0-.617-.5-1.117-1.117-1.117z" style="stroke:var(--color1, #fafafa)"/>
     </symbol>
