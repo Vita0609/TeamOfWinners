@@ -10,6 +10,13 @@
   margin: 0;
 }
 
+.covers-marquee {
+  position: relative;
+  right: -800px;
+  left: 0;
+  overflow: hidden;
+}
+
 .covers-marquee__inner {
   display: flex;
   transform: rotate(16deg);
