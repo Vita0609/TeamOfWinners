@@ -86,7 +86,7 @@
 }
 
 .about-me-red {
-  color: #ed3b44;
+  color: var(--accent);
 }
 
 .about-me-grey {

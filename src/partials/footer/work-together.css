@@ -1,4 +1,4 @@
-.titel-container {
+.title-container {
   position: relative;
   margin-bottom: 64px;
   max-width: 267px;
@@ -13,13 +13,16 @@
   position: absolute;
 }
 
-.titel-footer {
+.title-footer {
   text-indent: 52px;
   font-size: 40px;
   font-weight: 500;
   color: #ffffff;
   line-height: 1.1;
   letter-spacing: -0.03em;
+}
+.title-accent {
+  color: var(--accent);
 }
 
 .form-footer {
@@ -114,7 +117,7 @@
     flex-direction: row;
     gap: 32px;
   }
-  .titel-container {
+  .title-container {
     max-width: 532px;
   }
   .footer-image {
@@ -123,7 +126,7 @@
     height: 70px;
   }
 
-  .titel-footer {
+  .title-footer {
     text-indent: 90px;
     font-size: 64px;
     line-height: 1.1;
