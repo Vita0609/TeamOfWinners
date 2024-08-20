@@ -9,6 +9,32 @@
     #1c1d20 50%,
     #1c1d20 100%
   );
+  --gray: #5555;
+  /* background: linear-gradient(
+      to right,
+      var(--grey) 0%,
+      transparent 5%,
+      var(--grey) 5%,
+      transparent 10%,
+      var(--grey) 10%,
+      transparent 15%,
+      var(--grey) 15%,
+      transparent 20%,
+      var(--grey) 20%,
+      transparent 25%,
+      var(--grey) 25%,
+      transparent 30%,
+      var(--grey) 30%,
+      transparent 35%,
+      var(--grey) 35%,
+      transparent 40%,
+      var(--grey) 40%,
+      transparent 45%,
+      var(--grey) 45%,
+      transparent 50%
+    ),
+    linear-gradient(to right, var(--accent) 0%, #1c1d20 100%); */
+
   position: relative;
   overflow: hidden;
   padding-top: 32px;
