@@ -2,20 +2,20 @@ import Swiper from 'swiper';
 
 import { Keyboard, Navigation } from 'swiper/modules';
 
-import proj1m from '../img/projects/projects-mobile_1_1x.jpg';
-import proj1m2x from '../img/projects/projects-mobile_1_2x.jpg';
-import proj1 from '../img/projects/projects_1_1x.jpg';
-import proj12x from '../img/projects/projects_1_2x.jpg';
+import proj1m from '/img/projects/projects-mobile_1_1x.jpg';
+import proj1m2x from '/img/projects/projects-mobile_1_2x.jpg';
+import proj1 from '/img/projects/projects_1_1x.jpg';
+import proj12x from '/img/projects/projects_1_2x.jpg';
 
-import proj2m from '../img/projects/projects-mobile_2_1x.jpg';
-import proj2m2x from '../img/projects/projects-mobile_2_2x.jpg';
-import proj2 from '../img/projects/projects_2_1x.jpg';
-import proj22x from '../img/projects/projects_2_2x.jpg';
+import proj2m from '/img/projects/projects-mobile_2_1x.jpg';
+import proj2m2x from '/img/projects/projects-mobile_2_2x.jpg';
+import proj2 from '/img/projects/projects_2_1x.jpg';
+import proj22x from '/img/projects/projects_2_2x.jpg';
 
-import proj3m from '../img/projects/projects-mobile_3_1x.jpg';
-import proj3m2x from '../img/projects/projects-mobile_3_2x.jpg';
-import proj3 from '../img/projects/projects_3_1x.jpg';
-import proj32x from '../img/projects/projects_3_2x.jpg';
+import proj3m from '/img/projects/projects-mobile_3_1x.jpg';
+import proj3m2x from '/img/projects/projects-mobile_3_2x.jpg';
+import proj3 from '/img/projects/projects_3_1x.jpg';
+import proj32x from '/img/projects/projects_3_2x.jpg';
 
 const projects = [
   {
