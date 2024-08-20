@@ -1,7 +1,7 @@
 .change-theme {
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 20px;
+  right: 15px;
   background-color: var(--accent);
   border-radius: 50%;
   width: 50px;
@@ -36,7 +36,7 @@
   .colors {
     transition: 500ms;
     left: 50%;
-    top: 87%;
+    top: 92%;
     translate: -50%;
     position: absolute;
 
