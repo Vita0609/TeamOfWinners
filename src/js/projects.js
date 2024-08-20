@@ -71,7 +71,7 @@ const generateProjectCard = (project) => `
 `;
 
 function renderProjects() {
-	const swiperWrapper = document.querySelector(".swiper-wrapper");
+	const swiperWrapper = document.querySelector(".swiper-wrapper-projects");
 
 	const slidesHTML = projects
 		.map((project) => {
