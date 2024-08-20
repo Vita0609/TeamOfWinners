@@ -67,12 +67,6 @@ async function renderReviews() {
           },
         },
 
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: true,
-          pauseOnMouseEnter: true,
-        },
-
         keyboard: {
           enabled: true,
           onlyInViewport: true,
@@ -81,7 +75,7 @@ async function renderReviews() {
 
         navigation: {
           nextEl: '.project-btn-right',
-          prevEl: ' .project-btn-left',
+          prevEl: '.project-btn-left',
         },
       });
     }
