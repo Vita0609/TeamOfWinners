@@ -1,4 +1,6 @@
+import 'accordion-js/dist/accordion.min.css';
 import 'izitoast/dist/css/iziToast.min.css';
+import 'swiper/css';
 import './js/about-me.js';
 import './js/change-theme.js';
 import './partials/header/js/header.js';

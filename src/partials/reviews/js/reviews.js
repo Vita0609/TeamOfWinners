@@ -1,7 +1,7 @@
 import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
+
 import Swiper from 'swiper';
-import 'swiper/css';
+
 import { Autoplay, Navigation } from 'swiper/modules';
 import ApiService from '../../../swagger-api';
 
