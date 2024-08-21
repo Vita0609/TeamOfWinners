@@ -26,7 +26,7 @@ function renderReview(data) {
     .map(
       review => `
     <li class="reviews-card swiper-slide">
-        <img class="reviews-card-img" src="${review.avatar_url}" alt="${review.author}'s avatar">
+        <img class="reviews-card-img" src="${review.avatar_url}" alt="${review.author}'s avatar" loading="lazy">
         <div class="reviews-card-data">
           <h3 class="reviews-card-name">${review.author}</h3>
           <p class="review-text">${review.review}</p>

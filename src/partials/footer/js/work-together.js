@@ -29,16 +29,21 @@ form.addEventListener('submit', async event => {
   commentInput.style.borderColor = '';
 
   if (!validateEmail(email)) {
-    emailInput.style.borderColor = 'red';
+    emailInput.style.borderColor = 'var(--accent)';
     isValid = false;
   }
 
   if (!comment.trim()) {
-    commentInput.style.borderColor = 'red';
+    commentInput.style.borderColor = 'var(--accent)';
     isValid = false;
   }
 
   if (!isValid) {
+    setTimeout(() => {
+      emailInput.style.borderColor = 'rgba(250, 250, 250, 0.2)';
+      commentInput.style.borderColor = 'rgba(250, 250, 250, 0.2)';
+    }, 2000);
+
     return;
   }
 

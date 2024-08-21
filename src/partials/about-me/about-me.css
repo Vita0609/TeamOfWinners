@@ -124,10 +124,12 @@ ul.about-me-accordion-container > li.ac {
 
 section#about-me .ac.is-active .ac-trigger-icon-down {
   display: none;
+  fill: transparent;
 }
 
 section#about-me li.ac.is-active .ac-trigger-icon-up {
   display: block;
+  fill: transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -157,7 +159,7 @@ ul.about-me-accordion-container h2.ac-header button.ac-trigger::after {
 ul.about-me-accordion-container .ac.is-active > .ac-header .ac-trigger::after {
   content: none;
 }
-
+/* . */
 section#about-me button.ac-trigger > .ac-trigger-icon {
   display: flex;
   justify-content: center;
@@ -166,7 +168,12 @@ section#about-me button.ac-trigger > .ac-trigger-icon {
   height: 36px;
   border-radius: 100px;
   border: 1px solid #fafafa33;
-  background-color: #1c1d20;
+  background-color: transparent;
+  transition: background-color 250ms ease;
+}
+
+section#about-me button.ac-trigger > .ac-trigger-icon:hover {
+  background: var(--accent);
 }
 
 @media screen and (min-width: 1440px) {
@@ -180,12 +187,14 @@ section#about-me button.ac-trigger svg.ac-trigger-icon-down {
   width: 18px;
   height: 18px;
   stroke: #fafafa;
+  fill: transparent;
 }
 
 @media screen and (min-width: 768px) {
   section#about-me button.ac-trigger svg.ac-trigger-icon-down {
     width: 20px;
     height: 20px;
+    fill: transparent;
   }
 }
 
@@ -316,7 +325,7 @@ section#about-me .swiper-slide-active {
 }
 
 section#about-me .swiper-button-next {
-  margin-left: 55px;
+  margin-left: auto;
 }
 
 .about-me-swiper-btn {
