@@ -1,0 +1,2 @@
+import{A as e,S as o,N as i,K as r}from"./vendor-DxL_t5AH.js";new e(".about-me-accordion-container",{duration:400,showMultiple:!0,openOnInit:[0]});const t=new o(".about-me-swiper",{modules:[i,r],loop:!0,slidesPerView:2,breakpoints:{768:{slidesPerView:3},1440:{slidesPerView:6}},keyboard:{enabled:!0,onlyInViewport:!1,pageUpDown:!0}});document.querySelector(".swiper-button-next").addEventListener("click",n=>{t.slideNext()});
+//# sourceMappingURL=about-me-DBP37pea.js.map
