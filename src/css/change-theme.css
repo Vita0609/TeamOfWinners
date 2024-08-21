@@ -68,3 +68,21 @@
 .colors .orange {
   background-color: #ff7f08;
 }
+@media screen and (min-width: 1440px) {
+  .colors {
+    transition: 500ms;
+    left: 88%;
+    top: 92%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+}
+@media screen and (min-width: 768px) {
+  .colors {
+    transition: 500ms;
+    left: 75%;
+    top: 92%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+}
