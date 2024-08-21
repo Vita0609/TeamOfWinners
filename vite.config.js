@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite';
 import fg from 'fast-glob';
-import injectHTML from 'vite-plugin-html-inject';
+import { defineConfig } from 'vite';
 import FullReload from 'vite-plugin-full-reload';
+import injectHTML from 'vite-plugin-html-inject';
+import htmlMinifier from 'vite-plugin-html-minifier';
 
 export default defineConfig(({ command }) => {
   return {
@@ -11,7 +12,6 @@ export default defineConfig(({ command }) => {
     root: 'src',
     build: {
       sourcemap: true,
-
       rollupOptions: {
         input: fg.sync('./src/*.html'),
         output: {
@@ -25,6 +25,15 @@ export default defineConfig(({ command }) => {
       },
       outDir: '../dist',
     },
-    plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+    plugins: [
+      injectHTML(),
+      FullReload(['./src/**/**.html']),
+      htmlMinifier({
+        minifyCSS: true,
+        minifyJS: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      }),
+    ],
   };
 });
