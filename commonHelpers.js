@@ -23,7 +23,7 @@ import{A,S as x,N as S,K as _,a as C,i as L,b as F}from"./assets/vendor-BBMlQ5Ue
       </li>
     `).join("");e.innerHTML=t}function Ne(){new x(".swiper-projects",{modules:[S,_],slidesPerView:1,spaceBetween:100,navigation:{nextEl:".projects-btn-right",prevEl:".projects-btn-left"}})}document.addEventListener("DOMContentLoaded",()=>{Fe(),Ne()});const Ke=document.querySelector(".reviews-section"),Xe=document.querySelector(".reviews-cards");async function He(){try{return await R.getReviews()}catch{return L.error({position:"topRight",message:"Not Found"}),[]}}function Ue(e){return e.map(t=>`
     <li class="reviews-card swiper-slide">
-        <img class="reviews-card-img" src="${t.avatar_url}" alt="${t.author}'s avatar">
+        <img class="reviews-card-img" src="${t.avatar_url}" alt="${t.author}'s avatar" loading="lazy">
         <div class="reviews-card-data">
           <h3 class="reviews-card-name">${t.author}</h3>
           <p class="review-text">${t.review}</p>
