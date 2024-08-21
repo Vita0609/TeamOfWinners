@@ -1,2 +1,0 @@
-import{A as o}from"./vendor-DxL_t5AH.js";const n="/TeamOfWinners/assets/icons-xKU4PvbT.svg";document.addEventListener("DOMContentLoaded",function(){new o(".accordion-container",{duration:300,elementClass:"faq-item",triggerClass:"ac-trigger",panelClass:"ac-panel",activeClass:"is-active",showMultiple:!0,beforeOpen:e=>{e.querySelector(".icon-answer use").setAttribute("href",`${n}#icon-up`)},beforeClose:e=>{e.querySelector(".icon-answer use").setAttribute("href",`${n}#icon-down`)}})});
-//# sourceMappingURL=faq-0x_qiRyr.js.map
