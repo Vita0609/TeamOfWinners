@@ -1,9 +1,7 @@
 @import url('modern-normalize/modern-normalize.css');
-
 @import url('./css/fonts.css');
 @import url('./css/reset.css');
-@import url('./css/variables.css');
-
+@import url('./partials/ui/css/variables.css');
 @import url('./partials/header/header.css');
 @import url('./partials/hero/hero.css');
 @import url('./partials/about-me/about-me.css');
@@ -13,5 +11,5 @@
 @import url('./partials/covers/covers.css');
 @import url('./partials/reviews/reviews.css');
 @import url('./partials/footer/work-together.css');
-@import url('./css/change-theme.css');
-@import url('./css/scroll-btn.css');
+@import url('./partials/ui/css/change-theme.css');
+@import url('./partials/ui/css/scroll-btn.css');
