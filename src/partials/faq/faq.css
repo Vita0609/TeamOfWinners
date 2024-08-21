@@ -67,6 +67,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color ease 250ms;
+}
+
+.btn-answer:hover,
+.btn-answer:focus {
+  background-color: var(--accent);
 }
 
 .text-item-list {

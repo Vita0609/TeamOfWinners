@@ -29,12 +29,12 @@ form.addEventListener('submit', async event => {
   commentInput.style.borderColor = '';
 
   if (!validateEmail(email)) {
-    emailInput.style.borderColor = 'red';
+    emailInput.style.borderColor = 'var(--accent)';
     isValid = false;
   }
 
   if (!comment.trim()) {
-    commentInput.style.borderColor = 'red';
+    commentInput.style.borderColor = 'var(--accent)';
     isValid = false;
   }
 

@@ -166,7 +166,12 @@ section#about-me button.ac-trigger > .ac-trigger-icon {
   height: 36px;
   border-radius: 100px;
   border: 1px solid #fafafa33;
-  background-color: #1c1d20;
+  background-color: transparent;
+  transition: background-color 250ms ease;
+}
+
+section#about-me button.ac-trigger > .ac-trigger-icon:hover {
+  background: var(--accent);
 }
 
 @media screen and (min-width: 1440px) {
