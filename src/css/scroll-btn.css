@@ -11,18 +11,9 @@
   border: 1px solid;
   transition: 200ms;
   z-index: 99;
+  cursor: pointer;
+}
 
-  &[hidden] {
-    display: inline-block;
-    translate: 50vw;
-  }
-
-  &:hover {
-    opacity: 0.9;
-  }
-
-  svg {
-    width: 40px;
-    height: 40px;
-  }
+.back-to-top:hover {
+  background-color: var(--accent-hover);
 }

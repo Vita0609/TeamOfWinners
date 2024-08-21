@@ -72,7 +72,7 @@
 .header-menu-link:hover,
 .header-menu-link:focus,
 .header-menu-link:active {
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 
 /* Dropdown Menu */
@@ -100,12 +100,17 @@
 .list-item-link:hover,
 .list-item-link:focus,
 .list-item-link:active {
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 
 /* Order Button */
 .header-order-btn {
   display: none;
+}
+
+.header-order-btn:hover,
+.header-order-btn:focus {
+  background-color: var(--accent-hover);
 }
 
 @media only screen and (min-width: 768px) {
@@ -124,11 +129,6 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 0px solid;
-  }
-
-  .header-order-btn:hover,
-  .header-order-btn:focus {
-    background-color: var(--accent);
   }
 }
 
@@ -226,7 +226,7 @@
 .burger-list-item-link:hover,
 .burger-list-item-link:focus,
 .burger-list-item-link:active {
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 
 /* Burger Order Button */
@@ -246,12 +246,6 @@
   line-height: 1.19;
   letter-spacing: -0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.burger-order-btn:hover,
-.burger-order-btn:focus,
-.burger-order-btn:active {
-  background: var(--accent);
 }
 
 /* Slide-in Animation */
