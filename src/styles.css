@@ -4,13 +4,14 @@
 @import url('./css/reset.css');
 @import url('./css/variables.css');
 
-@import url('./css/header.css');
-@import url('./css/hero.css');
-@import url('./css/about-me.css');
-@import url('./css/benefits.css');
-@import url('./css/projects.css');
-@import url('./css/faq.css');
-@import url('./css/covers.css');
-@import url('./css/reviews.css');
-@import url('./css/work-together.css');
+@import url('./partials/header/header.css');
+@import url('./partials/hero/hero.css');
+@import url('./partials/about-me/about-me.css');
+@import url('./partials/benefits/benefits.css');
+@import url('./partials/projects/projects.css');
+@import url('./partials/faq/faq.css');
+@import url('./partials/covers/covers.css');
+@import url('./partials/reviews/reviews.css');
+@import url('./partials/footer/work-together.css');
 @import url('./css/change-theme.css');
+@import url('./css/scroll-btn.css');

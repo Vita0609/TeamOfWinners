@@ -1,0 +1,86 @@
+<footer id="work-together" class="section footer">
+  <div class="container container-footer">
+    <div class="title-container">
+      <img
+        class="work-bg-image"
+        src="/img/work-together/collor1.jpg"
+        alt="glass-background"
+        loading="lazy"
+      />
+      <picture>
+        <source
+          srcset="
+            /img/work-together/image.jpg    1x,
+            /img/work-together/image@2x.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            /img/work-together/image-mobile.jpg    1x,
+            /img/work-together/image@2x-mobile.jpg 2x
+          "
+          media="(max-width:767px)"
+        />
+        <img
+          src="/img/work-together/image.jpg"
+          alt="title-picture"
+          class="footer-image"
+        />
+      </picture>
+      <h2 class="title-footer">
+        LET'S <span class="title-accent">WORK</span> TOGETHER
+      </h2>
+    </div>
+
+    <form id="form-footer" class="form-footer">
+      <div class="footer-splitter">
+        <input
+          class="input-footer"
+          type="text"
+          id="email"
+          name="email"
+          placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        />
+
+        <input
+          class="input-footer"
+          type="text"
+          id="comment"
+          name="comments"
+          placeholder="comments"
+        />
+      </div>
+
+      <button class="submit-btn-footer" type="submit">Send</button>
+    </form>
+
+    <address>
+      <ul class="address-list-footer">
+        <li class="address-item-footer">
+          <a class="address-email-footer" href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="address-item-footer">
+          <a class="address-tel-footer" href="tel:+3801111111111"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
+    </address>
+
+    <div class="modal-overlay">
+      <div class="modal-content">
+        <h3 class="modal-text">modal title</h3>
+        <p class="modal-description">modal description</p>
+        <button class="close-modal">
+          <svg class="close-icon">
+            <use href="/img/icons.svg#icon-x1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>

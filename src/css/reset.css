@@ -39,6 +39,11 @@ a {
   display: block;
 }
 
+:link,
+:visited {
+  color: unset;
+}
+
 img {
   display: block;
   max-width: 100%;

@@ -1,73 +1,89 @@
 .change-theme {
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 20px;
+  right: 15px;
   background-color: var(--accent);
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  font-size: 11.5px;
+  font-size: 10.5px;
   color: #fff;
   border: 1px solid;
   transition: 200ms;
-
-  &:hover {
-    opacity: 0.9;
-  }
+  z-index: 99;
 }
 
 .overlay {
   position: fixed;
   inset: 0;
-  background-color: #0005;
+  background-color: rgba(0, 0, 0, 0.3);
   transition: 500ms;
+  z-index: 99;
+}
 
-  &:not(.open) {
-    opacity: 0;
-    pointer-events: none;
+.overlay:not(.open) {
+  opacity: 0;
+  pointer-events: none;
+}
 
-    .colors {
-      translate: 10%;
-    }
-  }
+.overlay:not(.open) .colors {
+  transform: translateY(10%);
+}
 
+.colors {
+  transition: 500ms;
+  left: 45%;
+  top: 92%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.colors button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+}
+
+.colors .red {
+  background-color: #ed3b44;
+}
+
+.colors .lime {
+  background-color: #c6e327;
+}
+
+.colors .blue {
+  background-color: #0041e8;
+}
+
+.colors .coral {
+  background-color: #e6533c;
+}
+
+.colors .gray {
+  background-color: #2b4441;
+}
+
+.colors .orange {
+  background-color: #ff7f08;
+}
+@media screen and (min-width: 1440px) {
   .colors {
     transition: 500ms;
-    left: 50%;
-    top: 87%;
-    translate: -50%;
+    left: 88%;
+    top: 92%;
+    transform: translateX(-50%);
     position: absolute;
-
-    button {
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      border: none;
-    }
-
-    .red {
-      background-color: #ed3b44;
-    }
-
-    .lime {
-      background-color: #c6e327;
-    }
-
-    .blue {
-      background-color: #0041e8;
-    }
-
-    .coral {
-      background-color: #e6533c;
-    }
-
-    .gray {
-      background-color: #2b4441;
-    }
-
-    .orange {
-      background-color: #ff7f08;
-    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .colors {
+    transition: 500ms;
+    left: 75%;
+    top: 92%;
+    transform: translateX(-50%);
+    position: absolute;
   }
 }
 .colors:hover {

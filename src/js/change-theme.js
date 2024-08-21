@@ -14,8 +14,11 @@ function handleOverlay(e) {
 
   if (e.target.localName === 'button') {
     const btn = e.target;
-    const color = getComputedStyle(btn).backgroundColor;
-
+    const color = btn.dataset.color;
+    const hover = btn.dataset.hover;
     document.body.style.setProperty('--accent', color);
+    document.body.style.setProperty('--accent-hover', hover);
+
+    config.lineColor = config.dotColor = color;
   }
 }
