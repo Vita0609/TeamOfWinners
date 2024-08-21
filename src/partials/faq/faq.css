@@ -1,7 +1,3 @@
-#FAQ {
-  padding: 64px 0;
-}
-
 .title-faq {
   margin-bottom: 32px;
   font-weight: 600;
@@ -35,6 +31,15 @@
   cursor: pointer;
 }
 
+.title-item-list:hover {
+  text-shadow: 0 4px 3px rgba(250, 250, 250, 0.2),
+    0 4px 4px rgba(250, 250, 250, 0.2), 0 4px 6px rgba(250, 250, 250, 0.2),
+    0 4px 8px rgba(250, 250, 250, 0.2), 0 4px 11px rgba(250, 250, 250, 0.2);
+}
+
+.title-item-list:hover .toggle-btn {
+  outline: 1px solid #fff;
+}
 .questions {
   display: flex;
   justify-content: space-between;
@@ -90,10 +95,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  #FAQ {
-    padding: 96px 0;
-  }
-
   .faq-container {
     max-width: 704px;
     margin: 0 auto;
@@ -115,10 +116,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  #FAQ {
-    padding: 164px 0;
-  }
-
   .faq-container {
     max-width: 1376px;
     /* margin: 0 auto; */
@@ -181,11 +178,6 @@
   .faq-item:first-child {
     border-top: 1px solid rgba(250, 250, 250, 0.2);
   }
-}
-
-svg {
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .use {

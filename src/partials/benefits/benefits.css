@@ -1,8 +1,17 @@
 .benefits-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
+}
+
+.canvas-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
 }
 
 @media screen and (min-width: 1440px) {
