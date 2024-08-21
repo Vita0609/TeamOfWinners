@@ -157,7 +157,7 @@ ul.about-me-accordion-container h2.ac-header button.ac-trigger::after {
 ul.about-me-accordion-container .ac.is-active > .ac-header .ac-trigger::after {
   content: none;
 }
-
+/* . */
 section#about-me button.ac-trigger > .ac-trigger-icon {
   display: flex;
   justify-content: center;
