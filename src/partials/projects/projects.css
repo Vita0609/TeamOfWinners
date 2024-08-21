@@ -57,7 +57,7 @@
 .project-card-btn:hover,
 .project-card-btn:active,
 .project-card-btn:focus {
-  background-color: var(--accent);
+  background-color: var(--accent-hover);
 }
 
 .project-image-wrapper {
@@ -92,7 +92,7 @@
 .swiper-btn:hover,
 .swiper-btn:active,
 .swiper-btn:focus {
-  background-color: var(--accent);
+  background-color: var(--accent-hover);
 }
 
 .swiper-btn:disabled {
