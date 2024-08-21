@@ -6,7 +6,7 @@
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  font-size: 11.5px;
+  font-size: 10.5px;
   color: #fff;
   border: 1px solid;
   transition: 200ms;
@@ -32,15 +32,15 @@
 
 .colors {
   transition: 500ms;
-  left: 50%;
+  left: 45%;
   top: 92%;
   transform: translateX(-50%);
   position: absolute;
 }
 
 .colors button {
-  width: 28px;
-  height: 28px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   border: none;
 }
@@ -67,4 +67,22 @@
 
 .colors .orange {
   background-color: #ff7f08;
+}
+@media screen and (min-width: 1440px) {
+  .colors {
+    transition: 500ms;
+    left: 88%;
+    top: 92%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+}
+@media screen and (min-width: 768px) {
+  .colors {
+    transition: 500ms;
+    left: 75%;
+    top: 92%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
 }
