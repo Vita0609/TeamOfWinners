@@ -18,5 +18,7 @@ function handleOverlay(e) {
     const hover = btn.dataset.hover;
     document.body.style.setProperty('--accent', color);
     document.body.style.setProperty('--accent-hover', hover);
+
+    config.lineColor = config.dotColor = color;
   }
 }
