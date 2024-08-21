@@ -325,7 +325,7 @@ section#about-me .swiper-slide-active {
 }
 
 section#about-me .swiper-button-next {
-  margin-left: 55px;
+  margin-left: auto;
 }
 
 .about-me-swiper-btn {
